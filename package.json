@@ -2,9 +2,9 @@
   "name": "owenfly",
   "description": "owenfly",
   "repository": {
-  "type": "git",
-  "url": "https://github.com/chenfly1/owenfly"
-  },
+    "type": "git",
+    "url": "https://github.com/cardamon-dk/http"
+  },
   "scripts": {
     "analyze": "cross-env ANALYZE=1 umi build",
     "build:before": "node ./scripts/before_build.js",
