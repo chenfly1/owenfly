@@ -1,0 +1,90 @@
+@import '~antd/es/style/themes/default.less';
+
+.card {
+  :global {
+    // .ant-legacy-form-item .ant-legacy-form-item-control-wrapper {
+    //   width: 100%;
+    // }
+    .ant-card-body {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.headTitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.infoWrapper {
+  margin-bottom: 10px;
+  padding: 20px 20px 0 20px;
+  border: 1px dashed #ccc;
+}
+
+.formItem {
+  :global {
+    .ant-form-item {
+      margin-bottom: 8px;
+    }
+    .ant-checkbox-group {
+      vertical-align: -webkit-baseline-middle;
+    }
+    .ant-radio-wrapper-in-form-item {
+      line-height: 32px;
+    }
+  }
+}
+.collapsePanel {
+  :global {
+    background-color: #ccc;
+  }
+}
+.myCard {
+  :global {
+    .ant-tag {
+      padding: 3px 10px;
+      // color: #0d74ff;
+      font-weight: 400;
+      font-size: 16px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      // border: 1px solid #0d74ff;
+      border-radius: 4px;
+    }
+  }
+}
+.customTransfer {
+  :global {
+    .ant-transfer-list:last-child {
+      display: none;
+    }
+    .ant-transfer-operation {
+      display: none !important;
+    }
+    .ant-transfer-list-header-title {
+      display: flex;
+      justify-content: end;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.myColapse {
+  :global {
+    .ant-collapse-header {
+      background-color: #eef2f6;
+    }
+    .ant-collapse-header-text::before {
+      display: inline-block;
+      width: 3px;
+      height: 14px;
+      margin: 0 10px;
+      background-color: #3ba5e1;
+      transform: translateY(2px);
+      content: '';
+    }
+  }
+}

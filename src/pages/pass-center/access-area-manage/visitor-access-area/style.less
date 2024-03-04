@@ -1,0 +1,77 @@
+.customTransfer {
+  :global {
+    .ant-transfer-list:last-child {
+      display: none;
+    }
+
+    .ant-transfer-operation {
+      display: none !important;
+    }
+  }
+}
+
+.customList {
+  // height: calc(100vh - 490px);
+  :global {
+    .ant-list-item-action {
+      margin-left: 0;
+    }
+    .ant-list-item-meta-title {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.leftContent {
+  height: calc(100vh - 190px);
+  margin-top: 8px;
+  padding-left: 16px;
+  overflow: auto;
+}
+
+.cusTable {
+  :global {
+    .ant-table {
+      height: calc(100vh - 220px) !important;
+      overflow-y: auto;
+    }
+  }
+}
+
+.curson {
+  cursor: pointer;
+}
+
+.editSpace {
+  display: none;
+}
+
+.curson:hover .editSpace {
+  display: flex;
+}
+
+.primaryText {
+  color: @primary-color;
+}
+
+.sleectDevicesNum {
+  color: @primary-color;
+  line-height: 32px;
+}
+
+.sleectDevices {
+  padding: 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.itemColor {
+  :global {
+    .ant-list-item-meta-title {
+      color: @primary-color;
+    }
+  }
+}

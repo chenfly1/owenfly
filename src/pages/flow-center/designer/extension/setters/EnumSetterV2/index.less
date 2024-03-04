@@ -1,0 +1,32 @@
+@keyframes pop {
+  0% {
+    box-shadow: var(--box-shadow-picked-up);
+    transform: translate3d(var(--translate-x, 0), var(--translate-y, 0), 0) scale(1);
+  }
+  100% {
+    box-shadow: var(--box-shadow-picked-up);
+    transform: translate3d(var(--translate-x, 0), var(--translate-y, 0), 0) scale(var(--scale));
+  }
+}
+
+// 元素拖动样式
+.dragItem {
+  position: relative;
+  transform: translate3d(var(--translate-x, 0), var(--translate-y, 0), 0) scale(var(--scale, 1));
+  transition: box-shadow 200ms ease;
+  touch-action: none;
+}
+
+.dragOverlay {
+  z-index: 1;
+  box-shadow: 0 0 0 calc(1px / 1.02) rgba(63, 63, 68, 0.05), -1px 0 15px 0 rgba(34, 33, 81, 0.01),
+    0 15px 15px 0 rgba(34, 33, 81, 0.25);
+  animation: pop 200ms cubic-bezier(0.18, 0.67, 0.6, 1.22);
+  // 禁止表格单无格元素的一些默认行为
+  > td {
+    border-color: transparent !important;
+    > span {
+      pointer-events: none;
+    }
+  }
+}

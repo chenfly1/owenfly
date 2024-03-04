@@ -1,0 +1,82 @@
+@import '~antd/es/style/themes/default.less';
+.errorText {
+  color: @error-color !important;
+}
+// .cardTable {
+//   min-height: calc(100vh - 110px);
+//   margin: 0;
+//   padding: 0;
+//   // padding-top: 10px;
+//   background: #f2f2f2;
+//   border-radius: 0;
+
+// }
+.videoLayout {
+  & > div.content {
+    position: relative;
+    height: 680px;
+    background-color: #000;
+    & > .selectTip {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      margin-left: -50px;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+.deviceWarp {
+  margin-top: 10px;
+  :global {
+    .ant-pro-card-head {
+      font-weight: bold;
+    }
+    .ant-pro-card-head-title {
+      padding: 10px 0;
+    }
+    .ant-pro-card-body {
+      height: 280px;
+      overflow-y: scroll;
+    }
+    .deviceItem {
+      height: 30px;
+      padding-left: 8px;
+      line-height: 30px;
+      cursor: pointer;
+
+      &.active {
+        background-color: #9bf2e8;
+        border-radius: 4px;
+      }
+      &.onLine {
+        color: #000000e6;
+      }
+      &.offLine {
+        color: #0000004d;
+      }
+    }
+  }
+}
+.fullScreenDiv {
+  :global {
+    .ant-form-item {
+      margin: 0;
+    }
+  }
+}
+
+.pageWarp {
+  :global {
+    .ant-pro-card-col.ant-pro-card-split-horizontal {
+      width: calc(100% + 20px);
+    }
+  }
+}
+:global {
+  .SpaceTreePane {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

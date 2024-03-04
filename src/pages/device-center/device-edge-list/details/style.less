@@ -1,0 +1,101 @@
+@import '~antd/es/style/themes/default.less';
+
+.card {
+  :global {
+    .ant-legacy-form-item .ant-legacy-form-item-control-wrapper {
+      width: 100%;
+    }
+    .ant-card-body {
+      padding-bottom: 0;
+    }
+  }
+}
+.cardTab {
+  :global {
+    .ant-card-body {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+.EventLogStyle {
+  :global {
+    .ant-pro-card .ant-pro-card-body {
+      padding-inline: 0;
+    }
+    .ant-table {
+      height: auto !important;
+    }
+  }
+}
+
+.errorIcon {
+  margin-right: 24px;
+  color: @error-color !important;
+  cursor: pointer;
+
+  span.anticon {
+    margin-right: 4px;
+  }
+}
+
+.statusError {
+  color: @error-color;
+}
+
+.statusSuccess {
+  color: @primary-color;
+}
+
+.errorPopover {
+  :global {
+    .ant-popover-inner-content {
+      min-width: 256px;
+      max-height: 290px;
+      padding: 0;
+      overflow: auto;
+    }
+  }
+}
+
+.errorListItem {
+  padding: 8px 16px;
+  list-style: none;
+  border-bottom: 1px solid @border-color-split;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background: @item-active-bg;
+  }
+  &:last-child {
+    border: 0;
+  }
+  .errorIcon {
+    float: left;
+    margin-top: 4px;
+    margin-right: 12px;
+    padding-bottom: 22px;
+    color: @error-color !important;
+  }
+  .errorField {
+    margin-top: 2px;
+    color: @text-color-secondary;
+    font-size: 12px;
+  }
+}
+
+.editable {
+  td {
+    padding-top: 13px !important;
+    padding-bottom: 12.5px !important;
+  }
+}
+
+.deviceVersion {
+  text-align: center;
+}
+
+.version {
+  margin-bottom: 30px;
+  text-align: center;
+}

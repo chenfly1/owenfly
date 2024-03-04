@@ -1,0 +1,113 @@
+.device_map {
+  overflow: hidden;
+  &_main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    :global {
+      .ant-card-body {
+        flex: 1;
+        padding: 0;
+      }
+      .ant-card-head-title {
+        display: flex;
+        align-items: center;
+      }
+      .ant-spin-nested-loading,
+      .ant-spin-container {
+        height: 100%;
+      }
+    }
+  }
+  &_icon {
+    width: 0;
+    height: 0;
+  }
+  &_device {
+    width: 100%;
+    :global {
+      .ant-pro-table-list-toolbar-container {
+        display: none;
+      }
+      .ant-pro-table-search {
+        border: none;
+      }
+      .ant-pro-card-body {
+        padding: 0;
+      }
+      .ant-pagination {
+        padding: 0 24px;
+      }
+    }
+  }
+  &_tooltip {
+    &_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: bold;
+    }
+    &_footer,
+    &_footer:hover {
+      text-decoration: underline;
+    }
+    svg {
+      font-size: 16px;
+      cursor: pointer;
+    }
+    :global {
+      .ant-list-item,
+      .ant-list-header,
+      .ant-list-footer {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .ant-list-item {
+        padding: 5px 10px;
+        white-space: nowrap;
+      }
+
+      .ant-list-header,
+      .ant-list-footer {
+        padding: 10px;
+      }
+      .ant-badge-status-text {
+        color: rgba(255, 255, 255, 0.9);
+      }
+    }
+  }
+  &_action {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    :global {
+      .ant-btn,
+      .ant-btn:hover,
+      .ant-btn:focus {
+        color: #000;
+        background-color: rgba(255, 255, 255, 0.72) !important;
+        border: none;
+      }
+    }
+  }
+}
+
+.cusSpin {
+  height: calc(100vh - 162px);
+  :global {
+    .ant-spin-nested-loading,
+    .ant-spin-container {
+      height: 100%;
+    }
+  }
+  .noData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    color: #ccc;
+  }
+}

@@ -1,0 +1,18 @@
+@import '~antd/es/style/themes/default.less';
+
+.card {
+  margin-top: 20px;
+}
+
+.renewModal {
+  :global {
+    .ant-form-item-control-input-content {
+      & > div {
+        display: flex;
+        & > div:first-child {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

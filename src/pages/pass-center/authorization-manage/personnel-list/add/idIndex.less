@@ -1,0 +1,59 @@
+@import '~antd/es/style/themes/default.less';
+.stepBox {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.stepBoxAfter {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.stepBox::after {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  width: 1px;
+  height: 100%;
+  background: @primary-color;
+  content: '';
+}
+
+.step {
+  position: relative;
+  z-index: 100;
+  width: 24px;
+  color: #fff;
+  line-height: 24px;
+  text-align: center;
+  background: @primary-color;
+  border-radius: 50%;
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.formItem {
+  margin-bottom: 0;
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.icidform {
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.fileclass {
+  :global {
+    .ant-upload.ant-upload-select-picture-card {
+      margin-right: 0;
+    }
+  }
+}

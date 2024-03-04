@@ -1,0 +1,43 @@
+@import '~antd/es/style/themes/default.less';
+
+.errorText {
+  color: @error-color !important;
+}
+.ossImage {
+  width: 60px;
+}
+.card {
+  margin-bottom: 24px;
+
+  :global {
+    .ant-legacy-form-item .ant-legacy-form-item-control-wrapper {
+      width: 100%;
+    }
+  }
+}
+.payRadio {
+  display: flex;
+  align-items: center;
+  height: 36px;
+}
+
+.myForm {
+  :global {
+    .ant-space-align-center {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}
+.stepMForm {
+  :global {
+    .ant-form-item-control-input-content {
+      & > div {
+        display: flex;
+        & > div:first-child {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

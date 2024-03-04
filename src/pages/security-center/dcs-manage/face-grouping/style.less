@@ -1,0 +1,46 @@
+@import '~antd/es/style/themes/default.less';
+.errorText {
+  color: #ff4d4f !important;
+}
+.customTransfer {
+  :global {
+    .ant-transfer-list:last-child {
+      display: none;
+    }
+
+    .ant-transfer-operation {
+      display: none !important;
+    }
+  }
+}
+
+.cusTable {
+  :global {
+    .ant-table-wrapper {
+      height: calc(100vh - 265px) !important;
+      overflow: hidden;
+    }
+  }
+}
+
+.customList {
+  :global {
+    .ant-list-item-action {
+      margin-left: 0;
+    }
+    .ant-list-item-meta-title {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .ant-btn-link {
+      padding: 4px 0;
+    }
+  }
+}
+
+.curson {
+  cursor: pointer;
+}

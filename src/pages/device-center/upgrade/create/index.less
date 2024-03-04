@@ -1,0 +1,79 @@
+.upgrade_create {
+  &_help {
+    position: absolute;
+    top: 5px;
+    left: 445px;
+    display: flex;
+    align-items: center;
+    width: 170px;
+    svg {
+      margin-right: 8px;
+    }
+    &_radio {
+      top: 8px;
+      left: 140px;
+    }
+    &_tip {
+      padding: 0 !important;
+      background-color: transparent;
+      :global {
+        .ant-tooltip-inner {
+          width: 400px;
+          padding: 0 !important;
+          color: rgba(0, 0, 0, 0.45);
+          background-color: transparent;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  &_device {
+    width: 100%;
+    :global {
+      .ant-pro-table-list-toolbar-container {
+        display: none;
+      }
+      .ant-pro-table-search {
+        border: none;
+      }
+      .ant-pro-card-body {
+        padding: 0;
+      }
+      .ant-pagination {
+        padding: 0 24px;
+      }
+    }
+  }
+  :global {
+    .ant-steps {
+      width: 500px;
+      margin: 100px auto 70px;
+    }
+    .ant-pro-steps-form-container {
+      width: 480px;
+    }
+    .ant-pro-steps-form > .ant-row {
+      margin: 0 !important;
+    }
+    .ant-pro-steps-form-step:nth-child(2) {
+      width: 540px;
+    }
+    .ant-pro-steps-form-step:nth-child(3) {
+      width: 600px;
+    }
+    .ant-picker {
+      width: 100%;
+    }
+    .ant-space {
+      justify-content: center;
+      width: 100%;
+    }
+    .ant-upload-drag-icon,
+    .ant-upload-text {
+      display: none;
+    }
+    .ant-upload {
+      height: 170px;
+    }
+  }
+}

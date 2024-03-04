@@ -1,0 +1,154 @@
+@import '~antd/es/style/themes/default.less';
+.errorText {
+  color: @error-color !important;
+}
+
+.videoLayout {
+  display: flex;
+  flex-flow: wrap;
+  & > div {
+    position: relative;
+    margin: 2px;
+    background-color: #000;
+    &.videoItemBorder {
+      border: 2px solid red;
+    }
+    &.one {
+      flex: 0 0 100%;
+      height: calc(100vh - 200px);
+    }
+    &.four {
+      flex: 0 0 calc(50% - 4px);
+      height: calc(50vh - 100px);
+    }
+    &.four.fullscreen {
+      height: calc(50vh - 50px);
+    }
+    &.six {
+      flex: 0 0 calc(50% - 4px);
+      height: calc(50vh - 100px);
+    }
+    &.six.fullscreen {
+      flex: 0 0 calc(50% - 4px);
+      height: calc(40vh - 100px);
+    }
+    & > .selectTip {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      margin-left: -50px;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.deviceWarp {
+  :global {
+    .ant-pro-card-title {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .ant-pro-card-body {
+      height: 280px;
+      overflow-y: scroll;
+    }
+    .deviceItem {
+      height: 30px;
+      padding-left: 8px;
+      line-height: 30px;
+      cursor: pointer;
+
+      &.active {
+        background-color: #9bf2e8;
+        border-radius: 4px;
+      }
+      &.onLine {
+        color: #000000e6;
+      }
+      &.offLine {
+        color: #0000004d;
+      }
+    }
+  }
+}
+.pageWarp {
+  :global {
+    .ant-pro-card-col.ant-pro-card-split-horizontal {
+      width: calc(100% + 20px);
+    }
+  }
+}
+:global {
+  .SpaceTreePane {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.videoConten {
+  display: flex;
+  .control {
+    flex: 0 0 200px;
+  }
+  .videoLayout {
+    flex: 1;
+  }
+}
+.controlContent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 25px;
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    & > span {
+      color: #000;
+      font-size: 40px;
+    }
+  }
+  &.readonly > div {
+    cursor: auto;
+    & > span {
+      color: #ccc;
+      font-size: 40px;
+    }
+  }
+  .up {
+    position: absolute;
+    top: 0;
+    left: 50px;
+  }
+  .down {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+  }
+  .left {
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+  .right {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+  }
+  .middle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: default;
+    user-select: none;
+  }
+}

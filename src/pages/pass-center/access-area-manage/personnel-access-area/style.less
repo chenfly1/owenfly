@@ -1,0 +1,96 @@
+@import '~antd/es/style/themes/default.less';
+.customTransfer {
+  :global {
+    .ant-transfer-list:last-child {
+      display: none;
+    }
+
+    .ant-transfer-operation {
+      display: none !important;
+    }
+  }
+}
+
+.cusTable {
+  :global {
+    .ant-table-body {
+      height: calc(100vh - 270px) !important;
+    }
+    .ant-table {
+      height: calc(100vh - 220px) !important;
+      overflow-y: auto;
+    }
+  }
+}
+
+.customList {
+  :global {
+    .ant-list-item-action {
+      margin-left: 0;
+    }
+    .ant-list-item-meta-title {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .ant-btn-link {
+      padding: 4px 0;
+    }
+  }
+}
+
+.leftContent {
+  height: calc(100vh - 210px);
+  margin-top: 8px;
+  padding-left: 16px;
+  overflow: auto;
+}
+
+.curson {
+  cursor: pointer;
+}
+
+.editSpace {
+  display: none;
+}
+
+.curson:hover .editSpace {
+  display: flex;
+}
+
+.sleectDevicesNum {
+  color: @primary-color;
+  line-height: 32px;
+}
+
+.sleectDevices {
+  padding: 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.itemColor {
+  :global {
+    .ant-list-item-meta-title {
+      color: @primary-color;
+    }
+  }
+}
+
+.errorColor {
+  color: @error-color;
+}
+
+.primaryText {
+  color: @primary-color;
+}
+
+.page {
+  :global {
+    .anticon-menu-fold {
+      top: 64px;
+    }
+  }
+}

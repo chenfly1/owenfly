@@ -1,0 +1,37 @@
+@import '~antd/es/style/themes/default.less';
+
+.errorText {
+  color: @error-color !important;
+}
+.tableStyle {
+  :global {
+    .ant-table {
+      height: calc(100vh - 324px) !important;
+      overflow: auto;
+    }
+  }
+}
+.treeTitile {
+  display: flex;
+  justify-content: space-between;
+  .icons {
+    display: none;
+    flex: 1;
+    align-items: center;
+    justify-content: right;
+    & > div {
+      gap: 0 !important;
+    }
+  }
+  .content {
+    & > span {
+      display: block;
+      min-width: 80px;
+    }
+  }
+  &:hover {
+    .icons {
+      display: flex;
+    }
+  }
+}

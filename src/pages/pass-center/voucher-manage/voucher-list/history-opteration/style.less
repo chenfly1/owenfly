@@ -1,0 +1,96 @@
+@import '~antd/es/style/themes/default.less';
+
+.proText {
+  display: flex;
+  :global {
+    .ant-form-item {
+      flex: 1;
+    }
+    .ant-input-affix-wrapper {
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+    }
+    .ant-btn-icon-only {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
+
+.uploadFile {
+  :global {
+    .ant-btn {
+      display: flex;
+    }
+  }
+}
+
+.primaryText {
+  :global {
+    .ant-badge-status-text:hover {
+      color: @primary-color;
+    }
+  }
+}
+
+.modalTable {
+  :global {
+    .ant-pro-table-list-toolbar-container {
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.resultBox {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 24px;
+  line-height: 32px;
+  background: rgba(13, 116, 255, 0.06);
+  border: 1px solid #0d74ff;
+}
+
+.errorText {
+  color: @error-color;
+}
+
+.SucText {
+  color: @primary-color;
+}
+
+.btnClass {
+  width: 60px;
+  height: 32px;
+  color: #333;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  background: #f5f7f9;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkClass {
+  color: #979797;
+  font-size: 12px;
+}
+
+.btnClass:hover {
+  color: #326bfb;
+  background: #f0f7ff;
+}
+
+.btnClass:hover .checkClass {
+  color: #326bfb;
+}
+
+.btnAct {
+  color: #326bfb;
+  background: #f0f7ff;
+}
+
+.checkAct {
+  color: #326bfb;
+}

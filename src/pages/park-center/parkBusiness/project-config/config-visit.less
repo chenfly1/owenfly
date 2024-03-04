@@ -1,0 +1,34 @@
+.cusCard {
+  :global {
+    .ant-pro-card-border {
+      border: 1px solid rgba(5, 5, 5, 0.06) !important;
+    }
+    .ant-pro-form-list-action {
+      margin-bottom: 0;
+    }
+  }
+  .parkItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    padding-left: 10px;
+    line-height: 48px;
+    cursor: pointer;
+    user-select: none;
+    &.active {
+      background-color: #e9f7ff;
+      border-right: 3px solid #3891ff;
+    }
+  }
+  .bg-fbfbfb {
+    background-color: #fbfbfb;
+  }
+  .item-mb-0 {
+    :global {
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

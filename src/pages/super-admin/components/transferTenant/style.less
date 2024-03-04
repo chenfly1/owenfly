@@ -1,0 +1,24 @@
+@import '~antd/es/style/themes/default.less';
+
+.customTransfer {
+  :global {
+    .ant-transfer-list:last-child {
+      display: none;
+    }
+
+    .ant-transfer-operation {
+      display: none !important;
+    }
+    .ant-transfer-list-header-dropdown {
+      display: none !important;
+    }
+    .ant-tree {
+      height: 300px;
+      overflow-y: auto;
+    }
+  }
+}
+
+.siteTreeSearchValue {
+  color: @primary-color;
+}

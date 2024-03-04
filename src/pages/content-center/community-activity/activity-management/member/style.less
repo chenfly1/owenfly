@@ -1,0 +1,20 @@
+@import '~antd/es/style/themes/default.less';
+
+.errorText {
+  color: @error-color !important;
+}
+
+.editorHeight {
+  margin-bottom: 0;
+  .tox-tinymce {
+    height: calc(100vh - 160px) !important;
+  }
+}
+
+.cardStyle {
+  :global {
+    .ant-table {
+      height: calc(100vh - 320px) !important;
+    }
+  }
+}

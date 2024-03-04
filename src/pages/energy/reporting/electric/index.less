@@ -1,0 +1,43 @@
+@import '~antd/es/style/themes/default.less';
+.errorText {
+  color: @error-color !important;
+}
+
+.pageWarp {
+  :global {
+    .ant-pro-card-col.ant-pro-card-split-horizontal {
+      width: calc(100% + 20px);
+    }
+    .ant-pro-table-list-toolbar-title {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+      font-size: 14px;
+      span {
+        min-height: 14px;
+        text-wrap: nowrap;
+      }
+      .ant-divider-vertical {
+        min-height: 14px;
+      }
+      & > div {
+        text-wrap: nowrap;
+      }
+      div:nth-child(2),
+      div:nth-child(4),
+      div:nth-child(6) {
+        margin: 0 20px;
+      }
+    }
+    .ant-pro-table-list-toolbar-right {
+      width: 300px;
+    }
+  }
+}
+:global {
+  .SpaceTreePane {
+    padding-top: 20px;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+}

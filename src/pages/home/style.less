@@ -1,0 +1,88 @@
+.title {
+  color: #000520;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 238px;
+  margin: 16px 0;
+  padding: 0 24px 0 34px;
+  background: #e6f1ff;
+  background-color: #e6f1ff;
+  border-radius: 8px;
+  .content {
+    width: 50%;
+    .title {
+      color: #093d82;
+      font-weight: 500;
+      font-size: 24px;
+    }
+    .subTitle {
+      margin-top: 16px;
+      color: #093d82;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .headerImg {
+    height: 196px;
+  }
+}
+.headerImage {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+.applicationList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 13px 0;
+  .application {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 80px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    padding: 16px 24px;
+    background: #f9fafb;
+    border: 1px solid #e5e8ef;
+    border-radius: 8px;
+    cursor: pointer;
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      margin-right: 16px;
+    }
+    .content {
+      .applicationName {
+        margin-bottom: 6px;
+        color: #000520;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+      }
+      .applicationSubName {
+        color: #616577;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+  .application:last-child {
+    margin-right: 0;
+  }
+  .application:hover {
+    background: #e6f1ff;
+    border: 1px solid #0d74ff;
+    .applicationName {
+      color: #0d74ff;
+    }
+  }
+}

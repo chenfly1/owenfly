@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  .wrapper {
+    width: 800px;
+    height: 500px;
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 440px;
+      margin: 80px auto;
+      .title {
+        margin-bottom: 18px;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+      }
+      .subTitle {
+        margin-bottom: 50px;
+        font-size: 18px;
+      }
+      .accountName {
+        margin-top: 30px;
+      }
+      .button {
+        width: 100%;
+        margin-top: 52px;
+      }
+      .countDownContent {
+        align-self: flex-start;
+        margin-top: -10px;
+        margin-left: 26px;
+        :global {
+          .ant-btn {
+            margin-left: -10px;
+          }
+        }
+      }
+      .captchaTip {
+        margin-top: 50px;
+        font-size: 18px;
+      }
+    }
+    :global .ant-form-item {
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.energy_warning {
+  &_row {
+    cursor: pointer;
+    &--selected {
+      background-color: #0d74ff;
+    }
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  :global {
+    .ant-pro-card-border {
+      border: 1px solid rgba(5, 5, 5, 0.06) !important;
+    }
+    .ant-pro-card-contain-card {
+      margin: 24px 16px;
+    }
+    .ant-pro-card-col.ant-pro-card-split-vertical {
+      border: none;
+    }
+    .ant-pro-query-filter,
+    .ant-pro-card-body {
+      padding: 0;
+    }
+    .ant-pro-table {
+      padding: 24px 16px;
+    }
+    .ant-table {
+      height: auto !important;
+    }
+  }
+}

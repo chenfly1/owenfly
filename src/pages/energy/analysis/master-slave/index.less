@@ -1,0 +1,29 @@
+@import '~antd/es/style/themes/default.less';
+.errorText {
+  color: @error-color !important;
+}
+
+.pageWarp {
+  :global {
+    .ant-table {
+      height: auto !important;
+    }
+    .ant-pro-card-col.ant-pro-card-split-horizontal {
+      width: calc(100% + 20px);
+    }
+    .ant-pro-table-list-toolbar-left {
+      width: 100% !important;
+      max-width: 100%;
+    }
+    .ant-pro-table-list-toolbar-title {
+      width: 100% !important;
+    }
+  }
+}
+:global {
+  .SpaceTreePane {
+    padding-top: 20px;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+}

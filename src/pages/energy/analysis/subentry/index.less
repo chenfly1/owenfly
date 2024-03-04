@@ -1,0 +1,53 @@
+@import '~antd/es/style/themes/default.less';
+.errorText {
+  color: @error-color !important;
+}
+
+.pageWarp {
+  :global {
+    .ant-pro-card-col.ant-pro-card-split-horizontal {
+      width: calc(100% + 20px);
+    }
+    .ant-pro-card.ant-pro-card-contain-card > .ant-pro-card-body {
+      padding: 0;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+:global {
+  .SpaceTreePane {
+    padding-top: 20px;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+}
+.staticCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #cccccc26;
+  border-radius: 10px;
+  .staticCardLeft {
+    text-align: center;
+    .boldNum {
+      font-weight: bold;
+    }
+  }
+  .staticCardRight {
+    display: flex;
+    flex: 0 0 48%;
+    justify-content: space-between;
+    .boldText {
+      font-weight: bold;
+    }
+  }
+  :global {
+    .ant-divider-vertical {
+      height: 40px;
+    }
+  }
+}

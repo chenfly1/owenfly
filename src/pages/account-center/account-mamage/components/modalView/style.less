@@ -1,0 +1,59 @@
+.stepView {
+  background: #fff;
+  .ant-steps-item-description {
+    max-width: 200px !important;
+  }
+  &-content {
+    // display: flex;
+    // justify-content: center;
+    // padding: 30px 0;
+  }
+  &-action {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .stepView-carousel {
+    position: relative;
+    &-active {
+      position: relative !important;
+      top: 0 !important;
+      left: 0 !important;
+    }
+  }
+  .stepView-carousel-item {
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    min-height: 434px;
+    padding-top: 16px;
+  }
+
+  &-finish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-img {
+      width: 48px;
+      height: 48px;
+      margin: 80px 0 16px 0;
+    }
+    &-text {
+      margin-bottom: 54px;
+      color: #3d3d3d;
+      font-weight: normal;
+      font-size: 14px;
+      font-family: 思源黑体;
+      line-height: 22px;
+      letter-spacing: 0;
+    }
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

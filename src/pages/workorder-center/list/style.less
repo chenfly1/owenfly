@@ -1,0 +1,36 @@
+@import '~antd/es/style/themes/default.less';
+
+.tableStyleA {
+  :global {
+    .ant-table {
+      height: calc(80vh - 185px) !important;
+      overflow: auto;
+    }
+  }
+}
+
+.tableStyle {
+  :global {
+    .ant-table.ant-table-middle {
+      height: calc(100vh - 400px) !important;
+      overflow: auto;
+    }
+    .ant-pro-query-filter {
+      margin: 0 !important;
+      margin-top: 10px !important;
+    }
+  }
+}
+.carStyle {
+  :global {
+    .ant-card-body {
+      padding: 16px 24px 0 24px;
+    }
+  }
+}
+.AStyle {
+  > span {
+    color: #165dff;
+    letter-spacing: -0.07px;
+  }
+}

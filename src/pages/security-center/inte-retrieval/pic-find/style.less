@@ -1,0 +1,61 @@
+.imageUpBtn {
+  :global {
+    .ant-upload-list {
+      display: flex;
+      justify-content: center;
+      margin: 0 20px;
+    }
+    .ant-upload.ant-upload-select-picture-card {
+      width: 230px;
+      height: 230px;
+      margin: 0;
+    }
+    .ant-upload-list-picture-card-container {
+      width: 230px;
+      height: 230px;
+      margin: 0;
+    }
+  }
+}
+
+.rightContent {
+  :global {
+    padding: 24px;
+  }
+  .cardTitle {
+    margin-bottom: 15px;
+    padding: 0 10px 10px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+  }
+  .cardContent {
+    display: flex;
+    flex-flow: wrap;
+    .item {
+      display: flex;
+      flex: 0 0 20%;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      .itemText {
+        padding-top: 10px;
+      }
+      a {
+        padding-top: 10px;
+      }
+    }
+    .noData {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 300px;
+      color: #ccc;
+    }
+  }
+}

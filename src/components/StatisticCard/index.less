@@ -1,0 +1,114 @@
+/** 对比指标组件样式 */
+.statistic_compare {
+  &--inline {
+    display: inline-block;
+  }
+  &__label {
+    margin: 0 8px 0 0;
+    color: #616577;
+    font-size: 12px;
+  }
+  &__direction {
+    position: relative;
+    font-size: 14px;
+    &::after {
+      position: absolute;
+      top: 3px;
+      right: -12px;
+      width: 10px;
+      height: 12px;
+      content: '';
+    }
+  }
+  &__direction--top {
+    color: #f53f3f;
+    &::after {
+      background-image: url('../../assets/svg/compare_top.svg');
+    }
+  }
+  &__direction--down {
+    color: #6dd455;
+    &::after {
+      background-image: url('../../assets/svg/compare_down.svg');
+    }
+  }
+}
+
+/** 常规统计指标组件样式 */
+.statistic_indicator {
+  display: block;
+  &--inline {
+    display: inline-block;
+  }
+  &--inline + &--inline {
+    margin: 0 0 0 32px;
+  }
+  &__unit {
+    margin-left: 3px;
+  }
+  &--large &__label {
+    color: #000520;
+    font-size: 16px;
+    // line-height: 24px;
+  }
+  &--large &__value {
+    // margin-left: -4px;
+    color: #0d74ff;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  &--large &__unit {
+    color: #616577;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &--middle &__label {
+    color: #616577;
+    font-size: 14px;
+  }
+  &--middle &__value {
+    color: #000520;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  &--middle &__unit {
+    color: #616577;
+    font-size: 14px;
+  }
+  &--small &__label {
+    color: #616577;
+    font-size: 12px;
+  }
+  &--small &__value {
+    color: #000520;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  &--small &__unit {
+    color: #000520;
+    font-size: 12px;
+  }
+}
+
+.statistic_wrapper {
+  display: block;
+  border-radius: 8px;
+  :global {
+    .ant-card-head {
+      padding: 0;
+      border: none;
+    }
+    .ant-card-head-wrapper {
+      height: 44px;
+    }
+    .ant-card-head-title {
+      padding: 16px 20px 0;
+    }
+    .ant-card-extra {
+      padding: 14px 0 0;
+    }
+    .ant-card-body {
+      padding: 20px;
+    }
+  }
+}

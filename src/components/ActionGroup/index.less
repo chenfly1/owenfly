@@ -1,0 +1,26 @@
+.action_group {
+  &__menu {
+    z-index: 99;
+    :global {
+      .ant-dropdown-menu-item-danger:hover {
+        color: #ff4d4f;
+        background-color: #f5f5f5;
+      }
+      .ant-dropdown-menu-item {
+        padding: 0;
+      }
+    }
+  }
+  &__item--extra {
+    padding: 5px 12px;
+  }
+  &__section {
+    &__count {
+      margin: 0 3px;
+      color: #0d74ff;
+    }
+  }
+  &--tableColumn &__item--main {
+    padding: 0;
+  }
+}

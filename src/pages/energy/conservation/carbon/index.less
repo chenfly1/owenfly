@@ -1,0 +1,38 @@
+.energy_carbon_config {
+  margin: 24px 16px;
+  :global {
+    .ant-card-head {
+      height: 48px;
+    }
+  }
+
+  &_title {
+    display: block;
+    margin: 0 0 24px;
+    color: #0d74ff;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &_item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    height: 64px;
+    margin: 5px;
+    background-color: rgba(13, 116, 255, 0.05);
+    span {
+      display: block;
+      text-align: center;
+    }
+    span:nth-child(1) {
+      color: rgba(0, 0, 0, 0.9);
+      font-weight: 400;
+    }
+    span:nth-child(2) {
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 12px;
+    }
+  }
+}

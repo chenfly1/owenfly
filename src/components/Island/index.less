@@ -1,0 +1,29 @@
+.island {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  &__main {
+    width: 100%;
+    height: 100%;
+  }
+  &__scaler {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    a {
+      padding: 8px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.55);
+    }
+    svg {
+      width: 26px;
+      height: 26px;
+    }
+    a:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}

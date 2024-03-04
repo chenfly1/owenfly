@@ -1,0 +1,24 @@
+@import '~antd/es/style/themes/default.less';
+
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.flexBox .box {
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.formItem {
+  margin-bottom: 0;
+  :global {
+    .ant-form-item {
+      margin-bottom: 22px;
+    }
+    .ant-input-affix-wrapper > .ant-input:not(textarea) {
+      text-align: center;
+    }
+  }
+}

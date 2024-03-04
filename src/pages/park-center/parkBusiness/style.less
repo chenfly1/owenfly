@@ -1,0 +1,27 @@
+@import '~antd/es/style/themes/default.less';
+
+.leftContent {
+  height: calc(100vh - 250px);
+  margin-top: 8px;
+  padding: 0 16px;
+  overflow: auto;
+}
+
+.curson {
+  cursor: pointer;
+}
+
+.errorText {
+  color: @error-color !important;
+}
+
+.cardStyle {
+  :global {
+    .ant-card-body {
+      padding-top: 10px;
+    }
+    .ant-form-item {
+      margin: 0;
+    }
+  }
+}

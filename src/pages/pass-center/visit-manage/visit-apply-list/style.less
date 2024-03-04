@@ -1,0 +1,80 @@
+@import '~antd/es/style/themes/default.less';
+
+.proText {
+  display: flex;
+  :global {
+    .ant-form-item {
+      flex: 1;
+    }
+    .ant-input-affix-wrapper {
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+    }
+    .ant-btn-icon-only {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
+
+.uploadFile {
+  :global {
+    .ant-btn {
+      display: flex;
+    }
+  }
+}
+
+.primaryText {
+  :global {
+    .ant-badge-status-text:hover {
+      color: @primary-color;
+    }
+  }
+}
+
+.modalTable {
+  :global {
+    .ant-pro-table-list-toolbar-container {
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.resultBox {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 24px;
+  line-height: 32px;
+  background: rgba(13, 116, 255, 0.06);
+  border: 1px solid #0d74ff;
+}
+
+.errorText {
+  color: @error-color;
+}
+
+.SucText {
+  color: @primary-color;
+}
+
+.formItem {
+  :global {
+    .ant-form-item {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.cardStyle {
+  :global {
+    .ant-card-body {
+      padding-top: 0;
+    }
+    .ant-table-body {
+      height: calc(100vh - 330px) !important;
+    }
+  }
+}

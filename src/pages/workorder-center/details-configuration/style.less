@@ -1,0 +1,188 @@
+@import '~antd/es/style/themes/default.less';
+
+.pStyles {
+  color: #1d2129;
+  font-weight: normal;
+  font-size: 18px;
+  // font-family: Source Han Sans CN;
+  line-height: 28px;
+}
+
+.PaneStyle {
+  padding: 20px;
+}
+.SiteTreeSearchValue {
+  color: #165dff;
+}
+
+.ButtonStyle {
+  position: absolute;
+  // z-index: 100;
+  // background-color: red;
+  left: 26px;
+  height: 30px;
+  // margin-bottom: 14px;
+  > div {
+    > button {
+      margin-right: 36px;
+    }
+  }
+}
+
+.PStyle {
+  position: relative;
+  // margin-bottom: 14px;
+  height: 30px;
+  > p {
+    position: absolute;
+    right: 50px;
+    margin-bottom: 0;
+    color: #70757e;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  > span {
+    color: #7e7e7e;
+    font-weight: normal;
+    font-size: 18px;
+  }
+}
+
+.InstructionsStyle {
+  box-sizing: border-box;
+  color: '#70757e';
+  font-size: 16px;
+}
+
+// .SwitchStyle {
+//   position: absolute;
+//   top: 10px;
+//   right: 120px;
+//   > span {
+//     margin-right: 9px;
+//     color: #3d3d3d;
+//     font-size: 16px;
+//     // font-family: Source Han Sans CN;
+//   }
+//   > button {
+//     position: relative;
+//     bottom: 3px;
+//   }
+// }
+
+.SwitchStyle {
+  position: relative;
+  // top: 10px;
+  right: -22px;
+  > span {
+    margin-right: 9px;
+    color: #3d3d3d;
+    font-size: 16px;
+    // font-family: Source Han Sans CN;
+  }
+  > button {
+    position: relative;
+    // bottom: 3px;
+  }
+}
+
+.ModBox {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  .BoxLeft {
+    // background-color: red;
+    // height: 390px;
+    position: relative;
+    width: 579px;
+    border: 1px solid #d8d8d8;
+    > p {
+      box-sizing: border-box;
+      padding: 10px 16px;
+      color: #3d3d3d;
+      font-size: 14px;
+      background: #f2f3f5;
+    }
+    .BoxLeftTop {
+      box-sizing: border-box;
+      padding: 0 10px;
+      :global {
+        .ant-space {
+          display: flex !important;
+          justify-content: space-between !important;
+        }
+      }
+    }
+  }
+  .BoxMiddle {
+    position: relative;
+    width: 50px;
+    .BoxMiddleRightOutlined {
+      position: absolute;
+      top: 50%;
+      color: #8a8a8a;
+      font-size: 50px;
+      transform: translateY(-50%);
+    }
+  }
+  .BoxRight {
+    width: 380px;
+    // background-color: red;
+    // height: 390px;
+    overflow: auto;
+    border: 1px solid #d8d8d8;
+    > p {
+      box-sizing: border-box;
+      padding: 10px 16px;
+      color: #3d3d3d;
+      font-size: 14px;
+      background: #f2f3f5;
+    }
+  }
+}
+
+.TagStyle {
+  box-sizing: border-box;
+  height: 30px;
+  margin: 0 5px 5px 10px;
+  padding-left: 1rem;
+  color: #3d3d3d;
+  line-height: 30px;
+  text-align: center;
+  background: #f2f3f5;
+  border: none;
+  border-radius: 15px;
+}
+
+.tableStyle {
+  :global {
+    .ant-table {
+      height: calc(100vh - 330px) !important;
+      overflow: auto;
+    }
+  }
+}
+.AddTableStyle {
+  :global {
+    .ant-spin-container {
+      box-sizing: border-box !important;
+      padding: 10px !important;
+    }
+  }
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visibleBlock {
+  display: inline-block;
+}
+
+.hiddenNone {
+  display: none;
+}

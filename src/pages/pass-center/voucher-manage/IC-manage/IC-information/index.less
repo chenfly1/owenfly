@@ -1,0 +1,39 @@
+@import '~antd/es/style/themes/default.less';
+.card {
+  position: relative;
+  margin: auto;
+  padding-top: 50px;
+  :global {
+    .ant-pro-form {
+      padding: 28px 48px 20px 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.stepBox,
+.stepBoxAfter {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.stepBox::after {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  width: 1px;
+  height: 100%;
+  background: @primary-color;
+  content: '';
+}
+
+.step {
+  position: relative;
+  z-index: 100;
+  width: 24px;
+  color: #fff;
+  line-height: 24px;
+  text-align: center;
+  background: @primary-color;
+  border-radius: 50%;
+}

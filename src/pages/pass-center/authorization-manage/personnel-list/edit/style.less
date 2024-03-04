@@ -1,0 +1,144 @@
+@import '~antd/es/style/themes/default.less';
+
+.card {
+  :global {
+    // .ant-legacy-form-item .ant-legacy-form-item-control-wrapper {
+    //   width: 100%;
+    // }
+    .ant-card-body {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.cardContainer {
+  margin: -24px 0 0 !important;
+}
+
+.errorIcon {
+  margin-right: 24px;
+  color: @error-color !important;
+  cursor: pointer;
+
+  span.anticon {
+    margin-right: 4px;
+  }
+}
+
+.errorPopover {
+  :global {
+    .ant-popover-inner-content {
+      min-width: 256px;
+      max-height: 290px;
+      padding: 0;
+      overflow: auto;
+    }
+  }
+}
+
+.errorListItem {
+  padding: 8px 16px;
+  list-style: none;
+  border-bottom: 1px solid @border-color-split;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background: @item-active-bg;
+  }
+  &:last-child {
+    border: 0;
+  }
+  .errorIcon {
+    float: left;
+    margin-top: 4px;
+    margin-right: 12px;
+    padding-bottom: 22px;
+    color: @error-color !important;
+  }
+  .errorField {
+    margin-top: 2px;
+    color: @text-color-secondary;
+    font-size: 12px;
+  }
+}
+
+.editable {
+  td {
+    padding-top: 13px !important;
+    padding-bottom: 12.5px !important;
+  }
+}
+
+.eleListItem {
+  box-sizing: border-box;
+  height: 400px;
+  padding: 20px 20px 0;
+  overflow-y: auto;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  :global {
+    .ant-form-item {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.timePicker {
+  :global {
+    .ant-form-item {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.boxItem {
+  margin-bottom: 20px;
+  :global {
+    .ant-card-head-title {
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+}
+
+.headTitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.infoWrapper {
+  margin-bottom: 10px;
+  padding: 20px 20px 0 20px;
+  border: 1px dashed #ccc;
+}
+
+.borderItem {
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+}
+
+.formItem {
+  margin-bottom: 0;
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-upload.ant-upload-select-picture-card {
+      width: 150px;
+      height: 150px;
+      margin: 0;
+      border: 0;
+    }
+    .ant-upload-list-picture-card-container {
+      width: 150px;
+      height: 150px;
+      margin: 0;
+      background: #fff;
+    }
+  }
+}
+
+.formFirItem {
+  margin-bottom: 0 !important;
+}

@@ -1,0 +1,10 @@
+.dn-text {
+  &:empty::before {
+    display: block;
+    opacity: 0.6;
+    content: 'Please Input';
+  }
+  &:focus {
+    padding: 4px;
+  }
+}

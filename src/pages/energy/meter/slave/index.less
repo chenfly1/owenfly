@@ -1,0 +1,39 @@
+.meter_slave {
+  &__tree_title {
+    display: flex;
+    justify-content: space-between;
+    & > span {
+      flex: 1;
+    }
+  }
+  :global(.meter_slave__tree_action) {
+    display: none;
+  }
+  :global {
+    .ant-tree-node-selected .meter_slave__tree_action {
+      display: block;
+    }
+  }
+}
+
+.meter_tree {
+  &_title {
+    display: flex;
+    align-items: center;
+    margin-left: -25px;
+    :global {
+      .ant-spin,
+      .ant-spin-spinning {
+        opacity: 0;
+      }
+    }
+    &--loading {
+      :global {
+        .ant-spin {
+          background: #fff;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
