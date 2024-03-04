@@ -3,7 +3,7 @@
   "description": "owenfly",
    "repository": {
     "type": "git",
-    "url": "https://github.com/cardamon-dk/http"
+    "url": "https://github.com/chenfly1/owenfly"
   },
   "scripts": {
     "analyze": "cross-env ANALYZE=1 umi build",
