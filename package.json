@@ -1,9 +1,10 @@
 {
-  "name": "lingdong-park",
-  "version": "5.2.0",
-  "private": true,
-  "cache_version": "0.0.0",
-  "description": "An out-of-box UI solution for enterprise applications",
+  "name": "owenfly",
+  "description": "owenfly",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/cardamon-dk/http"
+  },
   "scripts": {
     "analyze": "cross-env ANALYZE=1 umi build",
     "build:before": "node ./scripts/before_build.js",
