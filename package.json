@@ -1,10 +1,9 @@
 {
   "name": "owenfly",
   "description": "owenfly",
-  "version": "1.0.1",
   "repository": {
-  "type": "git",
-  "url": "https://github.com/chenfly1/owenfly"
+    "type": "git",
+    "url": "https://github.com/chenfly1/owenfly"
   },
   "scripts": {
     "analyze": "cross-env ANALYZE=1 umi build",
@@ -27,6 +26,7 @@
     "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
     "openapi": "umi openapi",
     "playwright": "playwright install && playwright test",
+    "prepare": "husky install",
     "prettier": "prettier -c --write \"src/**/*\"",
     "serve": "umi-serve",
     "start:dev": "cross-env REACT_APP_ENV=dev MOCK=none UMI_ENV=dev umi dev",
@@ -131,9 +131,7 @@
     "xgplayer-hls.js": "^2.6.3",
     "xlsx": "^0.18.5",
     "xml2js": "^0.6.0",
-    "zrender": "^5.4.4",
-    "@lite-base/lb-form": "1.0.0",
-    "@lite-base/http": "1.0.0"
+    "zrender": "^5.4.4"
   },
   "devDependencies": {
     "@ant-design/pro-cli": "^2.1.0",
@@ -174,7 +172,13 @@
     "react-infinite-scroll-component": "^6.1.0",
     "stylelint": "^13.0.0",
     "typescript": "^4.5.0",
-    "umi-serve": "^1.9.10"
+    "umi-serve": "^1.9.10",
+    "owenfly": "1.0.1",
+    "owenfly-web": "1.0.1",
+    "owenfly-client": "1.0.1",
+    "owenfly-alpha": "1.0.1",
+    "owenfly-bi": "1.0.1",
+    "owenfly-base": "1.0.1"
   },
   "engines": {
     "node": ">=12.0.0"
